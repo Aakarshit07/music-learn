@@ -4,6 +4,7 @@ import React from "react";
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 import Link from "next/link";
 import courseData from '@/data/music_courses.json'
+import { Meteors } from "@/components/ui/meteors";
 
 interface courses {
     id: number,
@@ -68,6 +69,7 @@ function page() {
             </CardContainer>
            ))} 
         </div>
+        <Meteors number={200} />
     </div>
   )
 }
